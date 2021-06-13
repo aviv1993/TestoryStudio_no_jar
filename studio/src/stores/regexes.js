@@ -1,0 +1,5 @@
+export const defineEventRegex = new RegExp(`((define_event[\\s]*[(][\\s]*['|"])(.*)['|"][\\s]*,[\\s]*function[\\s]*[(](.*)[)][\\s]*[{])((.|\n)*)[}]`, 'g')
+export const bthreadRegex = new RegExp(`((bthread[\\s]*[(][\\s]*['|"])(.*)['|"][\\s]*,[\\s]*function[\\s]*[(](.*)[)][\\s]*[{])((.|\n)*)[}]`, 'g')
+export const innerFuncRegex = new RegExp(`(\\s|\n|\\t)*(.*)(\\s|\n|\t)*[(]((.*))[)](\\s|\n|\t)*[;]?`, 'g')
+export const threeArgsRegex = new RegExp(`(.*)[,](\\s|\n|\t)*(.*)(\\s|\n|\t)*[,](.*)`, 'g')
+export const twoArgsRegex = new RegExp(`(.*)[,](\\s|\n|\t)*(.*)(\\s|\n|\t)*`, 'g')
